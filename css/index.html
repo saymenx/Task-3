@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3 - Tailwind</title>
+
+  <link rel="stylesheet" href="task.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="headercntainer">
+      <a href="#" class="logo">
+        <img src="../images/logo.svg"  width="65"  height="40"/>
+      </a>
+      <nav aria-labelledby="prim">
+        <p id="prim" hidden>primary</p>
+        <button
+          type="button"
+          class="menu"
+          aria-expanded="false"
+          aria-controls="menu-list"
+        >
+          <span class="top">Menu</span>
+        </button>
+        <ul id="menu-list" class="hlist">
+          <li class="item">
+            <a href="#" class="linkh">Home</a>
+          </li>
+          <li class="item">
+            <a href="#" class="linkh">New</a>
+          </li>
+          <li class="item">
+            <a href="#" class="linkh">Popular</a>
+          </li>
+          <li class="item">
+            <a href="#" class="linkh">Trending</a>
+          </li>
+          <li class="item">
+            <a href="#" class="linkh">Categories</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <h1 class="head">News Homepage</h1>
+    <article class="headline">
+      <picture class="headline__illustration">
+        <source
+          media="(min-width: 56em)"
+          src="../images/image-web-3-desktop.jpg" />
+        <img
+          src="../images/image-web-3-mobile.jpg"
+          width="686" height="600"
+          class="img"
+        />
+      </picture>
+      <h2 class="title">The Bright Future of Web 3.0?</h2>
+      <div class="description">
+        <p class="descriptionn">
+          We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
+          But is it really fulfilling its promise?
+        </p>
+        <a href="#" class="action">Read more</a>
+      </div>
+    </article>
+
+    <aside>
+      <span class="asidehead">New</span>
+      <div class="aside">
+        <a href="#" class="asidetitle">Hydrogen VS Electric Cars</a>
+        <p class="asdescription">Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </div>
+      <div class="aside">
+        <a href="#" class="asidetitle">The Downsides of AI Artistry</a>
+        <p class="asdescription">What are the possible adverse effects of on-demand AI image generation?</p>
+      </div>
+      <div class="aside">
+        <a href="#" class="asidetitle">Is VC Funding Drying Up?</a>
+        <p class="asdescription">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </div>
+    </aside>
+
+    <section class="recommend">
+      <div class="recommendb">
+        <img src="../images/image-retro-pcs.jpg" width="200" height="254" alt="">
+        <div class="text">
+          <a href="#" class="Rtitle">
+            <span class="highlight">01</span>
+            Reviving Retro PCs
+          </a>
+          <p class="Rdescription">What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+      <div class="recommendb">
+        <img src="../images/image-top-laptops.jpg" width="200" height="254" alt="">
+        <div class="text">
+          <a href="#" class="Rtitle">
+            <span class="highlight">02</span>
+            Top 10 Laptops of 2022
+          </a>
+          <p class="Rdescription">Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+      <div class="recommendb">
+        <img src="../images/image-gaming-growth.jpg" width="200" height="254" alt="">
+        <div class="text">
+          <a href="#" class="Rtitle">
+            <span class="highlight">03</span>
+            The Growth of Gaming
+          </a>
+          <p class="Rdescription">How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+    </section>   
+  </main>
+</body>
+</html>
